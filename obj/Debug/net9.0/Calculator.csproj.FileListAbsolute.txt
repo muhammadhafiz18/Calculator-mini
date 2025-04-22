@@ -1,0 +1,14 @@
+/Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/bin/Debug/net9.0/Calculator
+/Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/bin/Debug/net9.0/Calculator.deps.json
+/Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/bin/Debug/net9.0/Calculator.runtimeconfig.json
+/Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/bin/Debug/net9.0/Calculator.dll
+/Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/bin/Debug/net9.0/Calculator.pdb
+/Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/obj/Debug/net9.0/Calculator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/obj/Debug/net9.0/Calculator.AssemblyInfoInputs.cache
+/Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/obj/Debug/net9.0/Calculator.AssemblyInfo.cs
+/Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/obj/Debug/net9.0/Calculator.csproj.CoreCompileInputs.cache
+/Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/obj/Debug/net9.0/Calculator.dll
+/Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/obj/Debug/net9.0/refint/Calculator.dll
+/Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/obj/Debug/net9.0/Calculator.pdb
+/Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/obj/Debug/net9.0/Calculator.genruntimeconfig.cache
+/Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/obj/Debug/net9.0/ref/Calculator.dll
