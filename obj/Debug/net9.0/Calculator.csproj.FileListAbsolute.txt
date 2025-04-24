@@ -12,3 +12,4 @@
 /Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/obj/Debug/net9.0/Calculator.pdb
 /Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/obj/Debug/net9.0/Calculator.genruntimeconfig.cache
 /Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/obj/Debug/net9.0/ref/Calculator.dll
+/Users/muhammadspc/Ilmhub/dotnet-standard-lessons/Calculator/obj/Debug/net9.0/Calculator.sourcelink.json

@@ -1,24 +1,25 @@
+using System.Data;
+using System.Diagnostics.Contracts;
+
 namespace Calculator.Services;
 
 public static class PerformService
 {
-    public static void Calculate(int a, List<HistoryItem> history)
+    public static void Calculate(List<HistoryItem> history)
     {
+        var dataTable = new DataTable();
         try
         {
-            string op = DisplayService.ReadInput("Enter operator (+, -, *, /): ");
+            var expression = DisplayService.ReadInput("Enter expression: ");
 
-            int b = int.Parse(DisplayService.ReadInput("Enter second number: "));
-            int result = Perform(a, b, op);
+            var result = Convert.ToDouble(dataTable.Compute(expression, null));
 
-            string stringResult = $"{a} {op} {b} = {result}";
+            string stringResult = $"{expression} = {result}";
 
             HistoryItem historyItem = new()
             {
                 Id = history.Count + 1,
-                Number1 = a,
-                Op = op,
-                Number2 = b,
+                Expression = expression,
                 Result = stringResult,
                 CreatedAt = DateTime.Now
             };

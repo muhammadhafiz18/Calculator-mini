@@ -1,5 +1,4 @@
 using System.Text.Json;
-using System.Xml;
 
 namespace Calculator.Services;
 
@@ -13,44 +12,44 @@ public static class HistoryService
             return;
         }
         
-        while (true)
-        {
-            DisplayService.PrintHistory(history);
+        DisplayService.PrintHistory(history);
+        // // while (true)
+        // // {
 
-            var input = DisplayService.ReadInput("Cancel or Filter: ");
+        //     var input = DisplayService.ReadInput("Cancel or Filter: ");
 
-            if (input == "cancel")
-                return; // bosh menyuga chiqib ketadi
+        //     if (input == "cancel")
+        //         return; // bosh menyuga chiqib ketadi
         
-            else if (input == "filter")
-            {
-                FilterHistory(history);
-                Console.Clear();
-            }
+        //     else if (input == "filter")
+        //     {
+        //         FilterHistory(history);
+        //         Console.Clear();
+        //     }
 
-            else
-                DisplayService.Print("This command is not available");
-        }
+        //     else
+        //         DisplayService.Print("This command is not available");
+        // }
     }
 
-    private static void FilterHistory(List<HistoryItem> history)
-    {
-        while (true)
-        {
-            var input = DisplayService.ReadInput("Enter operation to filter(+, -, *, /) or cancel: ").ToLower().Trim();
-            if (input == "cancel")
-                return;
+    // private static void FilterHistory(List<HistoryItem> history)
+    // {
+    //     while (true)
+    //     {
+    //         var input = DisplayService.ReadInput("Enter operation to filter(+, -, *, /) or cancel: ").ToLower().Trim();
+    //         if (input == "cancel")
+    //             return;
             
-            else if (input == "+" || input == "-" || input == "*" || input == "/") 
-            {
-                var filteredHistory = history.Where(x => x.Op == input).ToList();
-                DisplayService.PrintHistory(filteredHistory);
-            }
+    //         else if (input == "+" || input == "-" || input == "*" || input == "/") 
+    //         {
+    //             var filteredHistory = history.Where(x => x.Op == input).ToList();
+    //             DisplayService.PrintHistory(filteredHistory);
+    //         }
 
-            else
-                Console.WriteLine("This command is not available");
-        }
-    }
+    //         else
+    //             Console.WriteLine("This command is not available");
+    //     }
+    // }
 
     public static void ClearHistory(List<HistoryItem> history)
     {

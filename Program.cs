@@ -1,6 +1,6 @@
 ﻿using Calculator.Services;
 
-DisplayService.Print("Welcome to Calculator!\nAvailabe commands: +, -, /, *, history, clear, exit, cls");
+DisplayService.Print("Welcome to Calculator!\nAvailabe commands: calculate, history, clear, exit, cls");
 
 List<HistoryItem> history = [];
 HistoryService.LoadHistory("history.json", history);
@@ -21,8 +21,8 @@ while (true)
     else if (input == "clear")
         HistoryService.ClearHistory(history);
         
-    else if (int.TryParse(input, out int a))
-         PerformService.Calculate(a, history);
+    else if (input == "calculate")
+         PerformService.Calculate(history);
 
     else
         Console.WriteLine("This command is not available");
